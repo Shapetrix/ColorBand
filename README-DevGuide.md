@@ -27,9 +27,9 @@ Platform: Google Play/Web. 	        Audience: 12 - 99 /Male & Female / Simple Ga
 3. Slide 1 blue to match to 3 blues
 4. View 'Nice Animation'
 5. Approval M1 Game release:
-	 - Dev Signoff:
-	 - QA Signoff:
-	 - Shapetrix Signoff: 
+   - Dev Signoff: cat
+   - QA Signoff: cat
+   - Shapetrix Signoff: 
 	
 ## Sudo Code: 
 
