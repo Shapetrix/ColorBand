@@ -83,22 +83,22 @@ Platform: Google Play/Web. 	        Audience: 12 - 99 /Male & Female / Simple Ga
 ## Sudo Code: 
 
 Gameboard Code Sections:
-ArrayLayout.cs - Define gameboard grid array
-NodePieces.cs - Helper library for dealing with all the node pieces
-Point.cs - Helper library for dealing with node point functional calculations in grid
-MovePieces.cs - Gameboard user actions and UI event updates
-KilledPiece.cs - Dealing with removed matches recycling
-Match3.cs - Gameboard main codeblock and scene UI events
+- ArrayLayout.cs - Define gameboard grid array
+- NodePieces.cs - Helper library for dealing with all the node pieces
+- Point.cs - Helper library for dealing with node point functional calculations in grid
+- MovePieces.cs - Gameboard user actions and UI event updates
+- KilledPiece.cs - Dealing with removed matches recycling
+- Match3.cs - Gameboard main codeblock and scene UI events
 
 ### NOTES:
-Need to change MovePieces to MoveBand
-Need good explanation of MoveBand UX
-Need to add ScoreMove.cs that handles scores
-Need good explanation of scoring and time
-Add menu’s, navigation and other screens
+- Need to change MovePieces to MoveBand
+- Need good explanation of MoveBand UX
+- Need to add ScoreMove.cs that handles scores
+- Need good explanation of scoring and time
+- Add menu’s, navigation and other screens
 
 ### Design Modifications:
-Match3.cs line 264: Add MoveBand
+#### Match3.cs line 264: Add MoveBand
 MoveBand is taking The FlipPieces game action and using the function implementation event to move all the Pieces in the Band
 FlipPieces has ‘out-of-bounds’ as holes… in the Bands world… the end is the beginning of the other side… this is going to take quite abit of changing in the checking loops… but the same action (I think) is wanted when matchs are removed
 
