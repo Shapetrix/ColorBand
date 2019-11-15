@@ -15,8 +15,8 @@ public class Match3 : MonoBehaviour
     public GameObject nodePiece;
     public GameObject killedPiece;
 
-    int width = 9;
-    int height = 14;
+    int width = 8;
+    int height = 12;
     int[] fills;
     Node[,] board;
 
@@ -241,6 +241,30 @@ public class Match3 : MonoBehaviour
     public void FlipPieces(Point one, Point two, bool main)
     {
         if (getValueAtPoint(one) < 0) return;
+
+        Node nodeOne = getNodeAtPoint(one);
+        NodePiece pieceOne = nodeOne.getPiece();
+        if (getValueAtPoint(two) > 0)
+        {
+            Node nodeTwo = getNodeAtPoint(two);
+            NodePiece pieceTwo = nodeTwo.getPiece();
+            nodeOne.SetPiece(pieceTwo);
+            nodeTwo.SetPiece(pieceOne);
+
+            if(main)
+                flipped.Add(new FlippedPieces(pieceOne, pieceTwo));
+
+            update.Add(pieceOne);
+            update.Add(pieceTwo);
+        }
+        else
+            ResetPiece(pieceOne);
+    }
+
+    public void MoveBand(Point one, Point two, bool main)
+    {
+        if (getValueAtPoint(one) < 0) return; // -1 is a hole
+        Debug.Log("Point one valid");
 
         Node nodeOne = getNodeAtPoint(one);
         NodePiece pieceOne = nodeOne.getPiece();

@@ -51,6 +51,7 @@ public class MovePieces : MonoBehaviour
     public void MovePiece(NodePiece piece)
     {
         if (moving != null) return;
+        Debug.Log("Moving");
         moving = piece;
         mouseStart = Input.mousePosition;
     }
@@ -60,7 +61,7 @@ public class MovePieces : MonoBehaviour
         if (moving == null) return;
         Debug.Log("Dropped");
         if (!newIndex.Equals(moving.index))
-            game.FlipPieces(moving.index, newIndex, true);
+            game.MoveBand(moving.index, newIndex, true);
         else
             game.ResetPiece(moving);
         moving = null;
