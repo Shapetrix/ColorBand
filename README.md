@@ -17,11 +17,13 @@ Game Play all the blocks feel the screen, once the blocks have falling the playe
 ### Mechanics:
 
 #### Clock:
-- The clock is used to keep time of how long the play has to play the level.
+- The clock is used to tell the player how much time they have to collect all the stars in the level. once the time is done the level will end.
 #### Scoring:
 - Scoring is based on the collection of blocks collected in a chain.
 - If player matches 3 of the same color blocks in a chain, he or she is rewarded with set value of points those points are added to the score.
 - if player matches 7 or more then he or she is rewared with bouns points for completeing a more advance chain. 
+
+#### Stars:
 
 #### Worlds:
 - Worlds are unlocked with progression or bought thro in-game currency "Stars"
@@ -32,12 +34,25 @@ Game Play all the blocks feel the screen, once the blocks have falling the playe
 ### Features: 
 
 #### POSSIBLE POWER UPS:
-- Block swap: So you can switch blocks for stars or to get more colors in the combination. one time use.
+- Block Swap: So you can switch blocks for stars or to get more colors in the combination.
 - Color Flood: Change the whole board to the same color. 
-- Score Doubler: Doubles the score for your combo
+- Score Doubler: Doubles the score for your combo.
 - Colorizer: Turns grey blocks to color.
-- Time Power Up: Use leftover time from when you beat the level to fill up a “Time bonus” bar and when it’s full you can use it as a power up to add time to your game clock in the level of your choice. 
+- Extra Time: adds 10 seconds to the clock.
+- Star Bouns: Add one star to help the player complete their star count for the level, or it could be a bonus star that is added to       their over all star count.
 
+#### USING POWER UPS:
+
+Each power up is based on a color match. so the power up would start empty then fill up as the player collects matches. Not based on     the amount of blocks in the chain. The power ups and the state of completion will also carry through to the next levels, and worlds.     the power ups will be displayed in the Game UI Menu at the bottom of the screen. Player will tap the power icon to use them in the       current level. and the power icon will show as "empty" transpartent so it looks deactivated, and then the fill process starts over       again.
+
+  - Block Swap = Blue = 20 Matches to Fill
+  - Color Flood = Orange = 30 Matches to Fill
+  - Score Doubler = Pink = 10 Matches to Fill
+  - Colorizer = Green = 15 Matches to Fill
+  - Extra Time = Purple = 15 Matches to Fill
+  - Star Bonus = Yellow = 25 Matches to Fill
+  
+  
 #### PROGRESSION:
 - Introduce the Grey Blocks, these can still move with rows and columns but can’t be part of the color chain. When you start to introduce the grey blocks, it is a set number of blocks but in the higher levels, as the time counts down, more grey blocks are added.
 - Time gets shorter, the higher the level the player is the less time they have to collect points. 
