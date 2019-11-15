@@ -41,6 +41,25 @@ Gameboard Code Sections:
 - KilledPiece.cs - Dealing with removed matches recycling
 - Match3.cs - Gameboard main codeblock and scene UI events
 
+## Objects
+
+## Points and Stars
+
+- block: One block object on game grid
+- block.type: Block Type (blue, pink, yellow, purple, grey, star)
+- block.pnts: Points of block object when removed
+
+## User and Scores
+
+- player: Global player object
+- player.points:
+- player.stars:
+- player.world:
+- player.level:
+
+- match: 3 or more blocks in a line removes blocks and the sum of block.pnts are added to user.points score
+- stars: 3 or more blocks in a line containing one or more stars and some of 
+
 ### NOTES:
 - Need to change MovePieces to MoveBand
 - Need good explanation of MoveBand UX
@@ -49,6 +68,7 @@ Gameboard Code Sections:
 - Add menu’s, navigation and other screens
 
 ### Design Modifications:
+
 #### Match3.cs line 264: Add MoveBand
 MoveBand is taking The FlipPieces game action and using the function implementation event to move all the Pieces in the Band
 FlipPieces has ‘out-of-bounds’ as holes… in the Bands world… the end is the beginning of the other side… this is going to take quite abit of changing in the checking loops… but the same action (I think) is wanted when matchs are removed
