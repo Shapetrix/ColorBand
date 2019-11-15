@@ -8,8 +8,26 @@ Very Colorful, Match Game, that you work against the time to collect the magical
 - Strategy: figuring out the best moves to make to get the largest color combo and setting yourself up for the next move.  
 - Fast paced: trying to get the most points before time runs out. 
 
-## Genre/Story/Mechanics Summary:
+## Genre/Mechanics Summary:
+
+### Genre
+
 Game Play all the blocks feel the screen, once the blocks have falling the player will swipe rows or columns to create single color line, once the play creates the line it will collapse and new blocks will fill the empty space.
+
+### Mechanics:
+
+#### Clock:
+- The clock is used to keep time of how long the play has to play the level.
+#### Scoring:
+- Scoring is based on the collection of blocks collected in a chain.
+- If player matches 3 of the same color blocks in a chain, he or she is rewarded with set value of points those points are added to the score.
+- if player matches 7 or more then he or she is rewared with bouns points for completeing a more advance chain. 
+
+#### Worlds:
+- Worlds are unlocked with progression or bought thro in-game currency "Stars"
+
+#### Levels:
+- Levels are where the player will collect points and stars to unlock worlds, or buy new worlds with the stairs they earned.
 
 ### Features: 
 
