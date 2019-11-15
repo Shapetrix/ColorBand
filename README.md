@@ -77,8 +77,6 @@ Platform: Google Play/Web. 	        Audience: 12 - 99 /Male & Female / Simple Ga
 	Dev Signoff:
 	QA Signoff:
 	Shapetrix Signoff: 
-
-
 	
 ## Sudo Code: 
 
@@ -101,6 +99,3 @@ Gameboard Code Sections:
 #### Match3.cs line 264: Add MoveBand
 MoveBand is taking The FlipPieces game action and using the function implementation event to move all the Pieces in the Band
 FlipPieces has ‘out-of-bounds’ as holes… in the Bands world… the end is the beginning of the other side… this is going to take quite abit of changing in the checking loops… but the same action (I think) is wanted when matchs are removed
-
-	
-	
