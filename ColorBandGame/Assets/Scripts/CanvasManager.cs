@@ -7,7 +7,9 @@ public enum CanvasType
 {
     MainMenu,
     GameUI,
-    EndScreen
+    EndScreen,
+    WorldSelect,
+    LevelSelect
 }
 public class CanvasManager : Singleton<CanvasManager>
 {
