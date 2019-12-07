@@ -30,11 +30,11 @@ Game Play all the blocks feel the screen, once the blocks have falling the playe
 - Worlds are unlocked with progression by completeing the levels.
 
 #### Levels:
-- Levels are where the player will collect points and stars to unlock worlds. Players will not move on to the next level until they       collect all 3 stars from the current level.
+- Levels are where the player will collect points and stars to unlock worlds. Players will not move on to the next level until they       collect 2 or more stars from the current level.
 
 ### Features: 
 
-#### POSSIBLE POWER UPS:
+#### POWER UPS:
 - Block Swap: So you can switch blocks for stars or to get more colors in the combination.
 - Color Flood: Change the whole board to the same color. 
 - Score Doubler: Doubles the score for your combo.
@@ -43,8 +43,11 @@ Game Play all the blocks feel the screen, once the blocks have falling the playe
 
 #### USING POWER UPS:
 
-Each power up is based on a color match. so the power up would start empty then fill up as the player collects matches. Not based on     the amount of blocks in the chain. The power ups and the state of completion will also carry through to the next levels, and worlds.     the power ups will be displayed in the Game UI Menu at the bottom of the screen. Player will tap the power icon to use them in the       current level. and the power icon will show as "empty" transpartent so it looks deactivated, and then the fill process starts over       again.
+Each power up is based on a color match. so the power up would start empty then fill up as the player collects matches. Not based on     the amount of blocks in the chain. The power ups and the state of completion will also carry through to the next levels, and worlds.     the power ups will be displayed in the Game UI Menu at the bottom of the screen. The power up icons start as as power symbol then when they are filled the icon will switch to the corresponding power up graphic. When that happens the player can tap the icon to use the power up in the current level.  
 
+
+  *need to make these variables public so we can play aroud with how many matches to make them fill up
+  
   - Block Swap = Blue = 20 Matches to Fill
   - Color Flood = Orange = 30 Matches to Fill
   - Score Doubler = Pink = 10 Matches to Fill
@@ -53,6 +56,7 @@ Each power up is based on a color match. so the power up would start empty then 
   
   
 #### PROGRESSION:
+*need to make the time variable and the grey block variable public so we can play around with with how long the level is and the amound and spread time of the grey blocks.
 
 - Worlds 1-3 - Time Shortens
   - World 1: Levels - Set Time 2:00 mins
